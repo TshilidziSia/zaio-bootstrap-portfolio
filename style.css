@@ -16,6 +16,12 @@
  * Header
  */
 
+ .scrolling {
+  background-color: black;
+  opacity: 90%;
+  transition: all 0.5s;
+ }
+
  .banner-wrap {
   background-image: url(./assets/img/banner.JPEG);
   background-size: cover;
