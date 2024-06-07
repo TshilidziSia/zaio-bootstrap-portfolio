@@ -153,7 +153,7 @@
       </ul>
     </div>
 
-  <div class="banner-wrap vh-100 vw-100 text-white">
+  <div class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white">
     <div class="overlay"></div>
     <header class="px-5 p-3 text-white fixed-top scrolling">
       <div>
@@ -167,9 +167,9 @@
       </div>
     </header>
 
-  <main class="d-flex flex-column align-items-center justify-content-center h-75 text-center">
+  <main class="text-center">
     <h1 class="display-1">I am Tshilidzi Siavhe</h1>
-    <p class="lead">Aspiring Full Stack Web Developer</p>
+    <span id="typed" class="lead"></span>
   </main>
 </div>
 
@@ -185,7 +185,7 @@
               </div>
               <div class="col-md-7 mt-3">
                 <p><strong>Name:</strong> Tshilidzi Siavhe</p>
-                <p><strong>Profile:</strong> Full Stack Web Development Student</p>
+                <p><strong>Profile:</strong> Full Stack Web Developer</p>
                 <p><strong>Email:</strong> tshilidzisia@gmail.com</p>
                 <p><strong>Phone:</strong> 079 151 1411</p>
                 <p><strong>Skills:</strong>
@@ -315,12 +315,25 @@
     </div>
   </div>
 </section>
+<footer class="bg-dark text-center text-white">
+  <div class="container p-3">
+    <p>Developed by Tshilidzi Siavhe using Bootstrap, for Zaio Bootcamp course</p>
+  </div>
+</footer>
 <script>
   window.addEventListener("scroll", ()=>{
     const header = document.querySelector ("header");
     header.classList.toggle("scrolling", window.scrollY >0);
   })
 </script>
-
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#typed', {
+    strings: ['Full Stack Web Developer.', 'Product developer.', 'E-tutor.'],
+    typeSpeed: 75,
+    loop: false,
+  });
+</script>
+</script>
   </body>
 </html>
